@@ -1,0 +1,42 @@
+package com.priates.map;
+
+import com.badlogic.gdx.maps.tiled.TiledMap;
+import com.badlogic.gdx.maps.tiled.TmxMapLoader;
+import com.badlogic.gdx.maps.tiled.renderers.OrthogonalTiledMapRenderer;
+
+public class Map {
+
+	private TiledMap map;
+	private OrthogonalTiledMapRenderer renderer;
+	private String mapName;
+	
+	public Map(String mapName)
+	{
+		this.mapName = mapName;
+	}
+	
+	public void render(float delta)
+	{
+		renderer.render();
+	}
+	
+	public void resize(int width,int height)
+	{
+		
+	}
+	
+	public void show()
+	{
+		TmxMapLoader loader = new TmxMapLoader();
+		map = loader.load(mapName);
+		
+		renderer = new OrthogonalTiledMapRenderer(map);
+	}
+	
+	public void dispose()
+	{
+		map.dispose();
+		renderer.dispose();
+	}
+	
+}

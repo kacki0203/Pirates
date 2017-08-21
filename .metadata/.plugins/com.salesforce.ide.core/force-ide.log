@@ -2,3 +2,9 @@
  (1) Resource '/libgdx projects' is not open.
  WARN [2017-08-20 08:22:25,926] (ProjectAddEvaluator.java:visit:99) - Unable to add skip builder flag to added project 'P/libgdx projects': Resource '/libgdx projects' is not open. Cause:
  (1) Resource '/libgdx projects' is not open.
+ WARN [2017-08-20 10:58:29,095] (ConnectionFactory.java:clearCache:217) - No cached connections
+ WARN [2017-08-20 10:58:29,097] (DescribeObjectRegistry.java:clearCache:661) - No cached describes
+ WARN [2017-08-20 10:58:29,097] (MetadataFactory.java:clearCache:126) - No cached metadata stubs
+ WARN [2017-08-21 14:41:07,311] (ConnectionFactory.java:clearCache:217) - No cached connections
+ WARN [2017-08-21 14:41:07,412] (DescribeObjectRegistry.java:clearCache:661) - No cached describes
+ WARN [2017-08-21 14:41:07,412] (MetadataFactory.java:clearCache:126) - No cached metadata stubs

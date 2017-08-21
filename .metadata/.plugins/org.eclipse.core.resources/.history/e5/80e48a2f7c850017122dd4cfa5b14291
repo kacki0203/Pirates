@@ -1,0 +1,43 @@
+package com.pirates.game;
+
+import com.badlogic.gdx.Game;
+import com.badlogic.gdx.graphics.OrthographicCamera;
+import com.badlogic.gdx.graphics.g2d.SpriteBatch;
+import com.pirates.screen.GameScreen;
+import com.priates.map.Map;
+
+public class Pirates extends Game
+{
+
+	public static SpriteBatch batch;
+	private OrthographicCamera camera;
+	private Map currentMap;
+	@Override
+	public void create()
+	{
+		this.setScreen(new GameScreen(this));
+		System.out.println("JA");
+		batch = new SpriteBatch();
+		camera = new OrthographicCamera();
+		this.map = new Map("maps/grassMap.tmx",camera);
+	}
+	
+	public void resize(int width,int height)
+	{
+		camera.viewportHeight = height;
+		camera.viewportWidth = width;
+		camera.update();
+	}
+	
+	public void dispose()
+	{
+		
+	}
+	
+	@Override
+	public void render()
+	{
+		super.render();
+	}
+	//
+}

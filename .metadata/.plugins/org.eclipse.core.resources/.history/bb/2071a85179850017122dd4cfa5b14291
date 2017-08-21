@@ -1,0 +1,10 @@
+package com.priates.map;
+
+import com.badlogic.gdx.maps.tiled.TiledMap;
+
+public class Map {
+
+	private TiledMap map;
+	
+	
+}

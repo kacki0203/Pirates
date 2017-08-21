@@ -1,0 +1,12 @@
+package com.priates.map;
+
+import com.badlogic.gdx.maps.tiled.TiledMap;
+import com.badlogic.gdx.maps.tiled.renderers.OrthogonalTiledMapRenderer;
+
+public class Map {
+
+	private TiledMap map;
+	private OrthogonalTiledMapRenderer renderer;
+	
+	
+}
